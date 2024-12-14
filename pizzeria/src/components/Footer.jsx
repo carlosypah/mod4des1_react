@@ -1,5 +1,7 @@
 const Footer = () =>{
-    return '© 2021 - Pizzería Mamma Mia! - Todos los derechos reservados'
+    return (
+        <footer>© 2021 - Pizzería Mamma Mia! - Todos los derechos reservados</footer>
+    )
 }
 
 export default Footer;

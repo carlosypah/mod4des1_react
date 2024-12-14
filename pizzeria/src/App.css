@@ -1,45 +1,66 @@
 #root {
-  max-width: 1280px;
+  width: 90vw;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 .card {
-  padding: 2em;
+  /* padding: 2em; */
+  flex: 1;
 }
 
 .read-the-docs {
   color: #888;
 }
-.hdr{
-  background-color: red;
+.header{
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('./assets/imgs/Header.jpg');
+  height: 30vh;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  /* opacity: 0.5; */
+  /* filter: brightness(0.4); */
+  
+}
+main{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin: 2em;
+
+}
+
+.card-title{
+  /* background-color: rosybrown; */
+  text-align: start;
+}
+.card-buttons{
+  /* background-color: rgb(34, 160, 160); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ingredientes{
+  /* background-color: blue; */
+  font-size: larger;
+  padding: 10px;
+  margin: 2em 0 2em 0;
+}
+.precio{
+  /* background-color: aquamarine; */
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+footer{
+  width: 100%;
+  color:  white;
+  background-color: #212529;
+  padding: 15px 0 15px 0;
 }
