@@ -5,20 +5,22 @@ const Navbar = () =>{
     const token = false;
     
     return (
-        <>
-            <Button>🍕 Home</Button>
+        <div className='navegation'>
+            <span className='navbar-logo item1'>Pizzería Mamma Mía!</span>
+            <Button variant='outline-light' className='item2'>🍕 Home</Button>
             {token ? 
                 <>
-                    <Button>🔒 Profile</Button>
-                    <Button>🔒 Logout</Button>
+                    <Button variant='outline-light' className='item3'>🔒 Profile</Button>
+                    <Button variant='outline-light' className='item4'>🔒 Logout</Button>
                 </> : 
                 <>
-                    <Button>🔐 Login</Button> 
-                    <Button>🔐 Register</Button>
+                    <Button variant='outline-light' className='item3'>🔐 Login</Button> 
+                    <Button variant='outline-light' className='item4'>🔐 Register</Button>
                 </>
-            }    
-            <Button>🛒 Total ${total.toLocaleString('es-CL')}</Button>
-        </>
+            } 
+            <span  className='item5'>.</span>   
+            <Button variant='outline-primary' className='item6'>🛒 Total ${total.toLocaleString('es-CL')}</Button>
+        </div>
     );
 }
 
